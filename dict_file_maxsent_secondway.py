@@ -18,8 +18,8 @@ for line in handle:
     list.append(x)
 for y in list:
     counts[y]=counts.get(y,0)+1 
-for key in counts:
-    z=counts.values() 
-    if counts[key]==max(z):
-        print key, max(z)
+x=max(counts, key=counts.get)
+print x,counts[x]
+
+    
 
